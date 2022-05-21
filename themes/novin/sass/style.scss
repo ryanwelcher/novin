@@ -1,0 +1,59 @@
+/*!
+Theme Name:   Novin
+Description:  Novin Informatikai Kft. honlapja
+Author:       Jordan - Novin
+Template:     generatepress
+Text Domain:  novin
+Version:      3.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         blog, custom-logo, custom-menu, theme-options, one-column, block-patterns, block-styles
+*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+@import "typography.scss";
+
+/*--------------------------------------------------------------
+# Loading Animation
+--------------------------------------------------------------*/
+
+//@import 'loader.scss';
+
+/*--------------------------------------------------------------
+# Hamburger menu
+--------------------------------------------------------------*/
+
+@import "./components/hamburger/hamburgers.scss";
+
+/*--------------------------------------------------------------
+# Gutenberg block editor style
+--------------------------------------------------------------*/
+
+@import "./components/gutenberg.scss";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+@import "./template-parts/header.scss";
+
+/*--------------------------------------------------------------
+# Footer style
+--------------------------------------------------------------*/
+
+@import "./template-parts/footer.scss";
+
+/*--------------------------------------------------------------
+# Page style
+--------------------------------------------------------------*/
+
+@import "page.scss";
+
+/*--------------------------------------------------------------
+# Page header style
+--------------------------------------------------------------*/
+
+@import "./template-parts/page-header.scss";

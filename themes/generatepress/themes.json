@@ -1,0 +1,22 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "independence",
+					"color": "#3d405b",
+					"name": "Independence"
+				},
+				{
+					"slug": "yaleblue",
+					"color": "#004794",
+					"name": "Yale Blue"
+				}
+			]
+		}
+	},
+	"styles": {},
+	"customTemplates": {},
+	"templateParts": {}
+}

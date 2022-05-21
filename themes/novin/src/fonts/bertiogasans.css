@@ -1,0 +1,35 @@
+/*Bertioga Sans Medium*/
+@font-face {
+	font-family: "Bertioga Sans";
+	src: url("BertiogaSans-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*Bertioga Sans SemiBold*/
+@font-face {
+	font-family: "Bertioga Sans";
+	src: url("BertiogaSans-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*Bertioga Sans Regular*/
+@font-face {
+	font-family: "Bertioga Sans";
+	src: url("BertiogaSans-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*Bertioga Sans Bold*/
+@font-face {
+	font-family: "Bertioga Sans";
+	src: url("BertiogaSans-Bold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

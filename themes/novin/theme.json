@@ -1,0 +1,80 @@
+{
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"slug": "independence",
+					"color": "#3d405b",
+					"name": "Independence"
+				},
+				{
+					"slug": "yaleblue",
+					"color": "#004794",
+					"name": "Yale Blue"
+				},
+				{
+					"slug": "middlebluegreen",
+					"color": "#9dd9d2",
+					"name": "Middle Blue Green"
+				},
+				{
+					"slug": "orange1",
+					"color": "#f4d06f",
+					"name": "Orange Yellow Crayola"
+				},
+				{
+					"slug": "orange2",
+					"color": "#feab1f",
+					"name": "Bright Yellow Crayola"
+				},
+				{
+					"slug": "black",
+					"color": "#000000",
+					"name": "Black"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "white"
+				},
+				{
+					"slug": "white2",
+					"color": "#fcfcfc",
+					"name": "white 2"
+				},
+				{
+					"slug": "eerieblack",
+					"color": "#1b1c1d",
+					"name": "Eerie Black"
+				},
+				{
+					"slug": "onyx",
+					"color": "#3e3e3e",
+					"name": "Onyx"
+				},
+				{
+					"slug": "cultured",
+					"color": "#f8f8f8",
+					"name": "Cultured"
+				},
+				{
+					"slug": "silverchalice",
+					"color": "#b4b4b4",
+					"name": "Silver Chalice"
+				}
+			]
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true,
+			"units": ["%", "px", "em", "rem", "vh", "vw"]
+		},
+		"layout": {
+			"contentSize": "1100px",
+			"wideSize": "1400px"
+		}
+	}
+}

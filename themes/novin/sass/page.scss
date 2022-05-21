@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+#page.grid-container {
+	@include margin-width;
+	max-width: 100%;
+
+	.site-content {
+		padding: 0;
+	}
+}
+
+#page main.site-main article.page {
+	header.entry-header h1 {
+		margin: 3rem 0;
+		@include for-size(mobile, down) {
+			margin: 2rem 0;
+		}
+	}
+}

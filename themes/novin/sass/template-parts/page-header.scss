@@ -1,0 +1,64 @@
+@import "../variables.scss";
+
+section.page-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: center;
+	column-gap: 5vw;
+	min-height: calc(100vh - 80px - 56px);
+	@include for-size(tablet, down) {
+		min-height: calc(100vh - 70px - 56px);
+	}
+	@include for-size(mobile, down) {
+		min-height: calc(100vh - 82px);
+	}
+
+	/* Left side of the section */
+	.left-side {
+		width: 60%;
+		@include for-size(mobile, down) {
+			width: 100%;
+		}
+
+		/* Title */
+		h1.page-title {
+			text-transform: uppercase;
+			text-shadow: 0 1px 0 rgba(183, 183, 183, 0.68);
+		}
+
+		/* Subtitle */
+		h2.page-subtitle {
+			color: $color_blue_1;
+			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+		}
+
+		/* Description */
+		div.page-description {
+			color: $color_gray_4;
+			@include for-size(tablet, down) {
+				font-size: 16px;
+			}
+		}
+
+		/* CTA button*/
+		.page-cta-button {
+			@include black-button;
+		}
+	}
+
+	/* Right side of the section */
+	.right-side {
+		width: 40%;
+		@include for-size(mobile, down) {
+			display: none;
+		}
+
+		/* SVG */
+		.page-header-svg svg {
+			width: 100%;
+		}
+
+		/* Image */
+	}
+}

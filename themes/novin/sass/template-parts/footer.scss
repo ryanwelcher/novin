@@ -1,0 +1,204 @@
+@import "../variables.scss";
+
+/* Footer Container */
+.site-footer {
+	@include padding-width;
+	background-color: $color_blue_1;
+	/* Footer */
+	footer.site-info {
+		display: flex;
+		flex-direction: row;
+		@include for-size(650px, down) {
+			flex-direction: column;
+		}
+		justify-content: space-around;
+		align-items: flex-start;
+		background-color: $color_blue_1;
+		padding: 4rem 0;
+		text-align: left;
+
+		/* Column 1 */
+		.nv-footer-infos {
+			//Name
+			.novin-name {
+				margin-bottom: -20px;
+				margin-left: -12px;
+				margin-top: -16px;
+			}
+			//Bloginfo
+			.novin-title {
+				color: $color_gray_3;
+				font-weight: 600;
+			}
+			//Details
+			.address,
+			.email,
+			.telefon {
+				margin: 10px 0;
+				color: $color_gray_3;
+				font-weight: 600;
+			}
+
+			.email a,
+			.telefon a {
+				color: $color_gray_3;
+				font-weight: 600;
+				text-decoration: none;
+			}
+
+			/* Social icons */
+			.socials {
+				display: flex;
+				margin-top: 1.5rem;
+				.social-link {
+					margin-right: 18px;
+					display: flex;
+					svg {
+						width: 18px;
+						height: 18px;
+						fill: $color_white_0;
+					}
+				}
+			}
+		}
+
+		/* Column 2 & 3 */
+		.nv-footer-nav-1,
+		.nv-footer-nav-2 {
+			//Navigation title
+			.footer-menu-name {
+				background-color: $color_orange_2;
+				color: $color_white_0;
+				font-weight: bold;
+				border-radius: 3px;
+				padding: 0.6rem 1rem;
+				text-align: center;
+				font-size: 16px;
+				text-shadow: 1px 1px 2px $color_gray_1;
+				text-transform: uppercase;
+			}
+
+			//Menu elements
+			ul {
+				list-style-type: none;
+				margin: 0;
+				li {
+					margin: 10px 0;
+					a {
+						font-weight: 600;
+						color: $color_white_0;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		/* Column 1,2,3 */
+		.nv-footer-column {
+			margin: 2rem 0;
+			@include for-size(mobile, up) {
+				margin: 2rem 0 1.5rem 0;
+			}
+		}
+	}
+}
+
+/* Footer contact */
+.novin-footer-contact {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	@include for-size(desktop, down) {
+		width: 75%;
+	}
+	@include for-size(mobile, down) {
+		width: 100%;
+	}
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 auto;
+	min-height: 80vh;
+
+	/* Contact title */
+	.contact-title {
+		text-align: center;
+		align-self: center;
+		margin-bottom: 0;
+	}
+
+	/* Line */
+	.contact-design-line {
+		border-top: 2px solid black;
+		width: 200px;
+		align-self: center;
+		margin: 2rem auto;
+	}
+
+	/* Description */
+	.contact-description {
+		text-align: center;
+		color: $color_gray_4;
+		margin-bottom: 2rem;
+	}
+
+	/* Icons */
+	.contact-icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+
+		//Icon box
+		a.icon {
+			width: 140px;
+			display: grid;
+			justify-content: center;
+			text-decoration: none;
+
+			//Circle
+			.circle {
+				justify-self: center;
+				width: 70px;
+				height: 70px;
+				@include for-size(tablet, down) {
+					width: 50px;
+					height: 50px;
+				}
+				display: grid;
+				place-items: center;
+				background-color: $color_white_0;
+				border-radius: 100%;
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+				transition: 0.15s linear;
+
+				//svg
+				svg {
+					width: 25px;
+					@include for-size(tablet, down) {
+						width: 20px;
+					}
+					fill: $color_blue_1;
+					transition: 0.15s linear;
+				}
+			}
+			.circle:hover {
+				background-color: $color_blue_1;
+				svg {
+					fill: $color_white_0;
+				}
+			}
+
+			//text
+			.icon-text {
+				color: $color_black_0;
+				font-weight: 500;
+				margin-top: 1rem;
+				text-align: center;
+				@include for-size(tablet, down) {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
