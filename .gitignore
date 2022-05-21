@@ -1,3 +1,4 @@
+*.log
 /themes/gulp-dev/node_modules/
 /themes/twenty*/
 /plugins/novin-blocks/node_modules/
