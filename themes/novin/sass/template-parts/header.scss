@@ -238,6 +238,9 @@ header {
 			border-bottom: 2px solid $color_blue_1;
 			margin: 0 15px;
 		}
+		.mobile-menu-border.hidden {
+			visibility: hidden;
+		}
 	}
 
 	/* Mobile menu contents */

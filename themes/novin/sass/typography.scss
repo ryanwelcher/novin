@@ -49,7 +49,7 @@ body {
 	}
 	/*ON 4k screen*/
 	@include for-size(4k, up) {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		line-height: 1.6;
 	}
 }
@@ -67,12 +67,12 @@ body {
 	}
 	/*ON desktop screen*/
 	@include for-size(tablet, up) {
-		font-size: 2.25rem;
+		font-size: 3rem;
 		line-height: 1.2;
 	}
 	/*ON ultrahd screen*/
 	@include for-size(ultrahd, up) {
-		font-size: 2.75rem;
+		font-size: 3rem;
 		line-height: 1.15;
 	}
 	/*ON 4k screen*/
@@ -85,27 +85,27 @@ body {
 @mixin h2-style {
 	/*ON mobile screen*/
 	@include for-size(mobile, down) {
-		font-size: 1.525rem;
+		font-size: 1.8rem;
 		line-height: 1.15384615;
 	}
 	/*ON tablet screen*/
 	@include for-size(mobile, up) {
-		font-size: 1.8rem;
+		font-size: 2rem;
 		line-height: 1.25;
 	}
 	/*ON desktop screen*/
 	@include for-size(tablet, up) {
-		font-size: 1.85rem;
+		font-size: 2.1rem;
 		line-height: 1.25;
 	}
 	/*ON ultrahd screen*/
 	@include for-size(ultrahd, up) {
-		font-size: 2rem;
+		font-size: 2.2rem;
 		line-height: 1.325;
 	}
 	/*ON 4k screen*/
 	@include for-size(4k, up) {
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 		line-height: 1.25;
 	}
 }
@@ -128,12 +128,12 @@ body {
 	}
 	/*ON ultrahd screen*/
 	@include for-size(ultrahd, up) {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		line-height: 1.25;
 	}
 	/*ON 4k screen*/
 	@include for-size(4k, up) {
-		font-size: 2rem;
+		font-size: 1.6rem;
 		line-height: 1.25;
 	}
 }
@@ -156,12 +156,12 @@ body {
 	}
 	/*ON ultrahd screen*/
 	@include for-size(ultrahd, up) {
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 		line-height: 1.15;
 	}
 	/*ON 4k screen*/
 	@include for-size(4k, up) {
-		font-size: 1.75rem;
+		font-size: 1.55rem;
 		line-height: 1.25;
 	}
 }

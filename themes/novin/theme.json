@@ -48,7 +48,17 @@
 				{
 					"slug": "eerieblack",
 					"color": "#1b1c1d",
-					"name": "Eerie Black"
+					"name": "Eerie Black "
+				},
+				{
+					"slug": "eerieblack2",
+					"color": "#1f1f1f",
+					"name": "Eerie Black 2"
+				},
+				{
+					"slug": "eerieblack3",
+					"color": "#1b1e22",
+					"name": "Eerie Black 3"
 				},
 				{
 					"slug": "onyx",
@@ -64,6 +74,41 @@
 					"slug": "silverchalice",
 					"color": "#b4b4b4",
 					"name": "Silver Chalice"
+				},
+				{
+					"slug": "sonicsilver",
+					"color": "#727272",
+					"name": "Sonic Silver"
+				},
+				{
+					"slug": "onyx",
+					"color": "#404040",
+					"name": "Onyx 2"
+				},
+				{
+					"slug": "taupegray",
+					"color": "#8f8a8a",
+					"name": "Taupe Gray"
+				},
+				{
+					"slug": "jet",
+					"color": "#333333",
+					"name": "Jet"
+				},
+				{
+					"slug": "gainsboro",
+					"color": "#dbdbdb",
+					"name": "Gainsboro"
+				},
+				{
+					"slug": "silverchalice2",
+					"color": "#aaaaaa",
+					"name": "Silver Chalice 2"
+				},
+				{
+					"slug": "dimgray",
+					"color": "#6a6a69",
+					"name": "Dim Gray"
 				}
 			]
 		},

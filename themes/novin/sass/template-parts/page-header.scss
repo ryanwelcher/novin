@@ -31,6 +31,10 @@ section.page-header {
 		h2.page-subtitle {
 			color: $color_blue_1;
 			text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+			font-size: 1.85rem;
+			@include for-size(mobile, down) {
+				font-size: 1.5rem;
+			}
 		}
 
 		/* Description */

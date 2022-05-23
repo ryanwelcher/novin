@@ -1,0 +1,62 @@
+@import "../variables.scss";
+
+.linkek-container {
+	.wp-block-columns {
+		margin: 4vmax 0;
+		.left {
+			flex-basis: 28% !important;
+			@include for-size(desktop, down) {
+				flex-basis: 35% !important;
+			}
+			@include for-size(781px, down) {
+				flex-basis: auto !important;
+			}
+			figure {
+				margin-bottom: 0;
+				@include for-size(600px, down) {
+					margin-bottom: 2rem;
+				}
+				img {
+					width: 320px;
+					height: 320px;
+					@include for-size(tablet, down) {
+						width: 250px;
+						height: 250px;
+					}
+					@include for-size(mobile, down) {
+						width: 200px;
+						height: 200px;
+					}
+					object-fit: cover;
+					box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+				}
+			}
+		}
+
+		.right {
+			flex-basis: 50% !important;
+			@include for-size(desktop, down) {
+				flex-basis: 65% !important;
+			}
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.title {
+				@include h2-style;
+			}
+			.description {
+				font-size: 1.2rem;
+				@include for-size(desktop, down) {
+					font-size: 1rem;
+				}
+			}
+			.link {
+				margin-bottom: 0;
+				font-weight: bold;
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

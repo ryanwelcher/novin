@@ -11,8 +11,8 @@ if (!defined('ABSPATH')) {
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php generate_do_microdata('article'); ?>>
-	<div class="inside-article">
-		<?php
+    <div class="inside-article">
+        <?php
         /**
          * generate_before_content hook.
          *
@@ -25,8 +25,8 @@ if (!defined('ABSPATH')) {
         if (generate_show_entry_header()) :
             ?>
 
-		<header <?php generate_do_attr('entry-header'); ?>>
-			<?php
+        <header <?php generate_do_attr('entry-header'); ?>>
+            <?php
                 /**
                  * generate_before_page_title hook.
                  *
@@ -47,9 +47,9 @@ if (!defined('ABSPATH')) {
                  */
                 do_action('generate_after_page_title');
                 ?>
-		</header>
+        </header>
 
-		<?php
+        <?php
         endif;
 
         /**
@@ -68,10 +68,19 @@ if (!defined('ABSPATH')) {
         }
         ?>
 
-		<?php get_template_part('template-parts/page-header'); ?>
+        <?php get_template_part('template-parts/page-header'); ?>
 
-		<div class="entry-content" <?php echo $itemprop; // phpcs:ignore -- No escaping needed.?>>
-			<?php
+        <?php
+        /**
+         * novin_after_page_header hook.
+         *
+         * @since 0.1
+         */
+        do_action('novin_after_page_header');
+        ?>
+
+        <div class="entry-content" <?php echo $itemprop; // phpcs:ignore -- No escaping needed.?>>
+            <?php
             the_content();
 
             wp_link_pages(
@@ -81,9 +90,9 @@ if (!defined('ABSPATH')) {
                 )
             );
             ?>
-		</div>
+        </div>
 
-		<?php
+        <?php
         /**
          * generate_after_content hook.
          *
@@ -91,5 +100,5 @@ if (!defined('ABSPATH')) {
          */
         do_action('generate_after_content');
         ?>
-	</div>
+    </div>
 </article>

@@ -5,7 +5,8 @@ $color_white_1: #fcfcfc;
 
 $color_black_0: #000000;
 $color_black_1: #1b1c1d; //Eerie Black
-$color_black_2: #1f1f1f; //Eerie Black
+$color_black_2: #1f1f1f; //Eerie Black 2
+$color_black_3: #1b1e22; //Eerie Black 3
 
 $color_orange_1: #f4d06f; //Orange Yellow Crayola
 $color_orange_2: #feab1f; //Bright Yellow Crayola
@@ -18,13 +19,13 @@ $color_red_1: #d00000;
 $color_gray_1: #3e3e3e; //onyx
 $color_gray_2: #f8f8f8; //Cultured
 $color_gray_3: #b4b4b4; //Silver Chalice
-$color_gray_4: #727272;
-$color_gray_5: #404040;
-$color_gray_6: #8f8a8a;
-$color_gray_7: #1b1e22;
-$color_gray_8: #dbdbdb;
-$color_gray_9: #aaaaaa;
-$color_gray_10: #6a6a69;
+$color_gray_4: #727272; //Sonic Silver
+$color_gray_5: #404040; //Onyx 2
+$color_gray_6: #8f8a8a; //Taupe Gray
+$color_gray_7: #333333; //Jet
+$color_gray_8: #dbdbdb; //Gainsboro
+$color_gray_9: #aaaaaa; //Silver Chalice 2
+$color_gray_10: #6a6a69; //Dim Gray
 
 $color_blue_0: #004794; //Yale Blue
 $color_blue_1: #3d405b; //Independence
@@ -219,5 +220,24 @@ $mobile_margin_right: $mobile_padding_right;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 	&:hover {
 		background-color: $color_orange_2;
+	}
+}
+
+@mixin orange-button {
+	font-size: 14px;
+	padding: 12px 30px;
+	@include for-size(mobile, down) {
+		font-size: 12px;
+		padding: 10px 22px;
+	}
+	font-weight: 400;
+	border-radius: 5px;
+	background-color: $color_orange_2;
+	color: $color_white_0;
+	text-decoration: none;
+	transition: 0.15s linear;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	&:hover {
+		background-color: $color_black_0;
 	}
 }

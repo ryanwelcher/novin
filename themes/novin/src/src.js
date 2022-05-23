@@ -14,3 +14,6 @@ import "./header";
 
 //Page general
 import "./page";
+
+//Pages
+import "./pages/kapcsolat";

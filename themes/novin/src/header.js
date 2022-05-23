@@ -16,10 +16,12 @@
 (function ($) {
 	const $search = $("header .inside-header .mobile-header .mobile-search");
 	const $searchicon = $("header .inside-header .mobile-header .mobile-search-icon");
+	const $mobilemenuborder = $("header .inside-header .mobile-header .mobile-menu-border");
 
 	$searchicon.click(function () {
 		$search.toggleClass("is-open");
 		$searchicon.toggleClass("is-open");
+		$mobilemenuborder.toggleClass("hidden");
 	});
 })(jQuery);
 

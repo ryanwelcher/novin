@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+/* Referenciák oldal */
+
+.novin-references-container {
+	//Filter
+	.references-filter {
+		margin: 5vmax 0;
+	}
+
+	//Posts
+	.references-posts {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 15px 30px;
+		//Post
+		.references-post {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: stretch;
+
+			//Image
+			.reference-post-image {
+				object-fit: cover;
+				height: 230px;
+				width: 100%;
+			}
+
+			//Logo
+			.reference-post-logo {
+			}
+
+			//Title
+			.reference-post-title {
+			}
+
+			//Excerp
+			p {
+			}
+
+			//Button
+			p a.read-more {
+				@include orange-button;
+			}
+		}
+	}
+}
