@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "novinblocks/third-block",
+	"version": "0.1.0",
+	"title": "Szakértő",
+	"category": "novin-blocks",
+	"icon": "admin-users",
+	"description": "Szakértőtípus blokk és annak adatai",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"expertTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": ".expert-title"
+		},
+		"expertDescription": {
+			"type": "string",
+			"source": "html",
+			"selector": "p.expert-description"
+		},
+		"expertPrice": {
+			"type": "string",
+			"source": "html",
+			"selector": "p.expert-price"
+		},
+		"expertSkills": {
+			"type": "string",
+			"source": "html",
+			"selector": ".expert-skills"
+		},
+		"mediaID": {
+			"type": "number"
+		},
+		"mediaURL": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		},
+
+		"instructions": {
+			"type": "string",
+			"source": "html",
+			"selector": ".steps"
+		}
+	},
+	"textdomain": "novin-blocks",
+	"editorScript": "file:../../../../build/index.js",
+	"editorStyle": "file:../../../../build/index.css",
+	"style": "file:../../../../build/style-index.css"
+}

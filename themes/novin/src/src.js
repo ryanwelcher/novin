@@ -17,3 +17,6 @@ import "./page";
 
 //Pages
 import "./pages/kapcsolat";
+
+//Components
+import "./components/gutenberg";

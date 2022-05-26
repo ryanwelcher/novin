@@ -39,6 +39,26 @@ if (get_field('page_header')) :
 
         <?php endif; ?>
 
+        <?php
+
+        if (get_field('page_button_active_2')) :
+
+        $link = get_field('page_button_url_2');
+
+        if ($link):
+        $link_url = $link['url'];
+        $link_title = $link['title'];
+        $link_target = $link['target'] ? $link['target'] : '_self'; ?>
+        <a class="page-cta-button second-button"
+            href="<?php echo esc_url($link_url); ?>"
+            target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
+        </a>
+        <?php endif; ?>
+
+        <?php endif; ?>
+
+
+
 
 
     </div>

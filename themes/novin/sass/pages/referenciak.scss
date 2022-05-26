@@ -6,13 +6,55 @@
 	//Filter
 	.references-filter {
 		margin: 5vmax 0;
+		background-color: $color_white_0;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		border-radius: 3px;
+		@include for-size(mobile, down) {
+			flex-wrap: wrap;
+		}
+		//Links
+		a.filter {
+			font-family: "Bertioga Sans";
+			flex-basis: 100%;
+			align-self: stretch;
+			display: grid;
+			place-items: center;
+			text-align: center;
+			font-weight: bold;
+			color: $color_black_0;
+			background-color: $color_white_0;
+			opacity: 0.6;
+			padding: 2rem;
+			cursor: pointer;
+			text-decoration: none;
+			transition: 0.2s linear;
+			@include for-size(desktop, down) {
+				font-size: 1rem;
+				padding: 1.5rem;
+			}
+			@include for-size(tablet, down) {
+				font-size: 0.9rem;
+				padding: 1.5rem 1rem;
+			}
+			@include for-size(mobile, down) {
+				padding: 1rem;
+			}
+			&.is-active,
+			&:hover {
+				opacity: 1;
+				background-color: $color_orange_2;
+				color: $color_white_0;
+			}
+		}
 	}
 
 	//Posts
 	.references-posts {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 15px 30px;
+		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+		gap: 30px;
 		//Post
 		.references-post {
 			display: flex;
@@ -25,23 +67,56 @@
 				object-fit: cover;
 				height: 230px;
 				width: 100%;
+				border-radius: 3px;
+				box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 			}
 
 			//Logo
 			.reference-post-logo {
+				height: 50px;
+				object-fit: contain;
+				width: max-content;
+				margin: 10px;
 			}
 
 			//Title
 			.reference-post-title {
+				text-align: end;
+				font-weight: 600;
+				font-size: 1.3rem;
+				@include for-size(desktop, down) {
+					font-size: 1.2rem;
+				}
+				@include for-size(mobile, down) {
+					font-size: 1.1rem;
+				}
+				height: 50px;
+				justify-self: center;
 			}
 
 			//Excerp
 			p {
+				display: flex;
+				flex-direction: column;
+				font-size: 1rem;
+				@include for-size(mobile, down) {
+					font-size: 0.9rem;
+				}
+				color: $color_gray_4;
 			}
 
 			//Button
 			p a.read-more {
-				@include orange-button;
+				align-self: flex-end;
+				@include orange-button-mini;
+				margin-top: 1.5rem;
+				i {
+					font-style: normal;
+					margin-left: 10px;
+					margin-bottom: -2px;
+					position: relative;
+					bottom: -1px;
+				}
 			}
 		}
 	}

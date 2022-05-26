@@ -124,3 +124,30 @@ function swd_gutenberg_blocks() {
 add_action('enqueue_block_editor_assets', 'swd_gutenberg_blocks');
 
 /*-------------------------------------------------------------------------------------------------------*/
+
+/* Read more with an additional icon */
+add_filter('excerpt_more', 'generate_excerpt_more');
+/**
+ * Prints the read more HTML to post excerpts.
+ *
+ * @since 0.1
+ *
+ * @param string $more The string shown within the more link.
+ * @return string The HTML for the more link.
+ */
+function generate_excerpt_more($more) {
+    return apply_filters(
+        'generate_excerpt_more_output',
+        sprintf(
+            ' ... <a title="%1$s" class="read-more" href="%2$s" aria-label="%4$s">%3$s<i class="icon-chevron-right"></i></a>',
+            the_title_attribute('echo=0'),
+            esc_url(get_permalink(get_the_ID())),
+            __('Read more', 'generatepress'),
+            sprintf(
+                /* translators: Aria-label describing the read more button */
+                _x('More on %s', 'more on post title', 'generatepress'),
+                the_title_attribute('echo=0')
+            )
+        )
+    );
+}

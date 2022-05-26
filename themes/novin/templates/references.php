@@ -18,18 +18,20 @@ function load_all_novin_references() {
     ?>
 <section class="novin-references-container">
 
-    <div class="references-filter">
+    <div class="references-filter novin-filter">
         <?php
         $references_categories = get_terms(array(
-            'taxonomy' => 'references_category',
+            'taxonomy' => 'novin_services_categories',
             'hide_empty' => false,
+            'orderby' => 'term_order',
         ));
     /* Összes field */ ?>
-        <a data-slug="all"><?php _e('Összes', 'novin'); ?></a>
+        <a class="filter is-active" data-slug="all"><?php _e('Összes', 'novin'); ?></a>
         <?php
         /* List the category names and slugs */
         foreach ($references_categories as $category) {?>
-        <a data-slug="<?php echo $category->slug; ?>"><?php _e($category->name, 'novin'); ?></a>
+        <a class="filter"
+            data-slug="<?php echo $category->slug; ?>"><?php _e($category->name, 'novin'); ?></a>
         <?php } ?>
     </div>
 

@@ -1,0 +1,86 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-novinblocks-first-block {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+
+/* GYIK */
+.novin-gyik-container {
+	background-color: white;
+	border-top: 1px solid #8d8d8d;
+	border-bottom: 1px solid #8d8d8d;
+	width: 80%;
+	margin: 1vmax auto;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 50px;
+	transition: 0.25s linear;
+	@media only screen and (max-width: 760px) {
+		width: 100%;
+		padding: 25px;
+	}
+
+	//Top
+	.novin-gyik-top {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		cursor: pointer;
+		//Question
+		h3.novin-gyik-question {
+			font-weight: bold;
+			color: black;
+			flex: 1 0;
+			margin: 0 auto 0 0;
+		}
+
+		//Arrow
+		svg.arrow {
+			margin: 0 0 0 10px;
+			transition: 0.05s linear;
+		}
+	}
+
+	//Bottom
+	.novin-gyik-bottom {
+		display: none;
+		margin-top: 15px;
+		p {
+			margin: 0 25px 0 0;
+			color: #242424;
+		}
+		@media only screen and (max-width: 760px) {
+			p {
+				margin: 0 0;
+			}
+		}
+	}
+}
+//Open status
+.novin-gyik-container.is-active {
+	background-color: white;
+	margin: 1vmax auto 2vmax auto;
+	//Top
+	.novin-gyik-top {
+		//Question
+		h3.novin-gyik-question {
+		}
+
+		//Arrow
+		svg.arrow {
+			transform: rotate(180deg);
+		}
+	}
+
+	//Bottom
+	.novin-gyik-bottom {
+		display: block;
+	}
+}

@@ -7,9 +7,9 @@ div.wp-block[data-align="full"] .block-editor-rich-text__editable {
 	max-width: 100% !important;
 }
 div.wp-block[data-align="wide"] .block-list-appender.wp-block {
-	max-width: 100% !important;
+	max-width: auto !important;
 }
 
 div.wp-block[data-align="wide"] .block-editor-rich-text__editable {
-	max-width: 100% !important;
+	max-width: auto !important;
 }

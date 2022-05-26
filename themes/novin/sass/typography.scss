@@ -118,12 +118,12 @@ body {
 	}
 	/*ON tablet screen*/
 	@include for-size(mobile, up) {
-		font-size: 1.375rem;
+		font-size: 1.325rem;
 		line-height: 1.25;
 	}
 	/*ON desktop screen*/
 	@include for-size(tablet, up) {
-		font-size: 1.5rem;
+		font-size: 1.45rem;
 		line-height: 1.25;
 	}
 	/*ON ultrahd screen*/

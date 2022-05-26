@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+//Munkatársaink
+.novin-employees-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 5rem;
+	@include for-size(tablet, down) {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 3rem;
+	}
+	@include for-size(mobile, down) {
+		grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+		gap: 3rem;
+	}
+
+	//Employee
+	.novin-employee {
+		margin-top: 0;
+		justify-self: center;
+		//Image
+		figure.wp-block-image {
+			display: flex;
+			width: max-content;
+			img {
+				width: 250px;
+				height: 250px;
+				@include for-size(tablet, down) {
+					width: 200px;
+					height: 200px;
+				}
+				@include for-size(mobile, down) {
+					width: 175px;
+					height: 175px;
+				}
+				object-fit: cover;
+				border-radius: 2px;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+			}
+		}
+
+		//Name
+		h3 {
+		}
+		//Title
+		p {
+			margin-top: 5px;
+			font-size: 0.9rem;
+			color: $color_black_1;
+		}
+	}
+}

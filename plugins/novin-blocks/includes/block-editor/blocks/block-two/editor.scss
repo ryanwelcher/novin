@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-novinblocks-first-block {
+	border: 1px dotted #f00;
+}
+
+.novin-gyik-question,
+.novin-gyik-answer {
+	border-bottom: 1px solid rgb(58, 58, 58);
+}
+
+.novin-gyik-container {
+	.novin-gyik-bottom,
+	.novin-gyik-top {
+		display: block;
+		cursor: auto;
+	}
+}

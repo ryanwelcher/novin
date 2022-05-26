@@ -14,6 +14,25 @@
  */
 
 /**
+ * Add custom "Podkit" block category
+ *
+ * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/filters/block-filters/#managing-block-categories
+ */
+add_filter('block_categories', 'novin_block_categories', 10, 2);
+
+function novin_block_categories($categories, $post) {
+    return array_merge(
+        $categories,
+        array(
+            array(
+                'slug' => 'novin-blocks',
+                'title' => __('Novin Blocks', 'novin-blocks'),
+            ),
+        )
+    );
+}
+
+/**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
  * through the block editor in the corresponding context.
@@ -22,7 +41,7 @@
  */
 function novinblocks_novin_blocks_block_init() {
     $blocks = array(
-        'block-one/',
+        'block-one/', 'block-two/', 'block-three/',
 
     );
 

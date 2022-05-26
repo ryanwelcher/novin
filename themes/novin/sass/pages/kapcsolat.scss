@@ -86,8 +86,12 @@
 		-moz-appearance: none;
 		appearance: none; /* Remove default arrow */
 	}
-	select#wpforms-258-field_7 {
-		color: $color_gray_5 !important;
+	select#wpforms-258-field_7,
+	select#wpforms-395-field_7 {
+		color: #979797 !important;
+		option {
+			color: $color_black_0;
+		}
 	}
 	.wpforms-field.wpforms-field-select.dropdown.wpforms-field-select-style-classic {
 		position: relative;
@@ -96,7 +100,6 @@
 			right: 20px;
 			font-style: normal;
 			top: 25px;
-			cursor: pointer;
 		}
 	}
 

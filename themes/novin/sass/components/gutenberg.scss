@@ -1,11 +1,442 @@
+@use "sass:math";
 @import "../variables.scss";
 
 /* Gutenberg style rewrites */
 
 /* Alignfull and alinwide means the same in the novin themes */
-.entry-content .alignfull,
-.entry-content .alignwide {
+.entry-content .alignfull {
 	max-width: 100vw;
 	width: 100%;
 	@include -margin-width;
+}
+
+.entry-content .alignwide {
+	max-width: inherit !important;
+	width: 100%;
+	margin: auto !important;
+}
+
+//Image Block
+.is-style-image-left {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: 50%;
+	@include for-size(mobile, down) {
+		width: 100%;
+		margin: 0;
+	}
+	float: left;
+	margin: 8px 20px 14px 0;
+	position: relative;
+	overflow: hidden;
+	shape-outside: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+	figcaption {
+		margin: 0;
+		padding: 5px;
+		text-align: left;
+		color: $color_black_0;
+		background-color: $color_gray_2;
+	}
+}
+.dark-theme .is-style-image-left {
+	figcaption {
+		color: $color_orange_2;
+		background-color: transparent;
+	}
+}
+
+//Image Block
+.is-style-image-right {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: 50%;
+	@include for-size(mobile, down) {
+		width: 100%;
+		margin: 0;
+	}
+	float: right;
+	margin: 8px 0 14px 20px;
+	position: relative;
+	overflow: hidden;
+	shape-outside: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+	figcaption {
+		margin: 0;
+		padding: 5px;
+		text-align: right;
+		color: $color_black_0;
+		background-color: $color_gray_2;
+	}
+}
+.dark-theme .is-style-image-right {
+	figcaption {
+		color: $color_orange_2;
+		background-color: transparent;
+	}
+}
+
+//paragraph Block
+.is-style-zero {
+	margin: 0;
+}
+
+.is-style-zero-p {
+	margin: 0;
+}
+
+/*Button Block */
+//Black and white
+.is-style-black-and-white {
+	@include for-size(tablet, down) {
+		transform: scale(0.92);
+	}
+	@include for-size(mobile, down) {
+		transform: scale(0.85);
+	}
+	a {
+		border-radius: 5px;
+		font-family: "Francois One";
+		border: 2px solid $color_black_0 !important;
+		color: $color_black_0 !important;
+		background-color: $color_white_0 !important;
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+		transition: 0.15s linear;
+	}
+	a:hover {
+		color: $color_white_0 !important;
+		background-color: $color_black_0 !important;
+	}
+}
+.dark-theme .is-style-black-and-white {
+	a {
+		border-radius: 5px;
+		border-width: 0 !important;
+		color: $color_white_0 !important;
+		background-color: $color_black_0 !important;
+		box-shadow: 0 1px 2px 0 rgba(208, 193, 193, 0.3), 0 1px 3px 1px rgba(162, 167, 170, 0.3) !important;
+	}
+	a:hover {
+		color: $color_black_0 !important;
+		background-color: $color_white_0 !important;
+	}
+}
+.is-style-black-and-white.scale80 {
+	transform: scale(0.8);
+}
+.is-style-black-and-white.scale90 {
+	transform: scale(0.9);
+}
+
+/*Button Block */
+//Black and Orange
+.is-style-black-and-orange {
+	@include for-size(tablet, down) {
+		transform: scale(0.92);
+	}
+	@include for-size(mobile, down) {
+		transform: scale(0.85);
+	}
+	a {
+		border-radius: 5px;
+		font-family: "Francois One";
+		border: 2px solid $color_black_0 !important;
+		color: $color_white_0 !important;
+		background-color: $color_black_0 !important;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+		transition: 0.15s linear;
+	}
+	a:hover {
+		border: 2px solid $color_orange_1 !important;
+		color: $color_white_0 !important;
+		background-color: $color_orange_1 !important;
+	}
+}
+.dark-theme .is-style-black-and-orange {
+	a {
+		border-width: 0 !important;
+		color: $color_black_0 !important;
+		background-color: $color_white_1 !important;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+	}
+	a:hover {
+		color: $color_white_1 !important;
+		background-color: $color_orange_2 !important;
+	}
+}
+.is-style-black-and-orange.scale80 {
+	transform: scale(0.8);
+}
+.is-style-black-and-orange.scale90 {
+	transform: scale(0.9);
+}
+
+/*Button Block */
+//Outline Black
+.is-style-outline-black {
+	@include for-size(tablet, down) {
+		transform: scale(0.92);
+	}
+	@include for-size(mobile, down) {
+		transform: scale(0.85);
+	}
+	a {
+		border-radius: 5px;
+		font-family: "Francois One";
+		border: 2px solid $color_black_0 !important;
+		color: $color_black_0 !important;
+		background-color: transparent !important;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+		transition: 0.15s linear;
+	}
+	a:hover {
+		color: $color_white_1 !important;
+		background-color: $color_black_0 !important;
+	}
+}
+.dark-theme .is-style-outline-black {
+	a {
+		padding: 8px 18px !important;
+		border-radius: 5px;
+		border: 2px solid $color_white_1 !important;
+		color: $color_white_1 !important;
+		background-color: transparent !important;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+	}
+	a:hover {
+		color: $color_black_0 !important;
+		background-color: $color_white_1 !important;
+	}
+}
+.is-style-outline-black.scale80 {
+	transform: scale(0.8);
+}
+.is-style-outline-black.scale90 {
+	transform: scale(0.9);
+}
+
+/*Group Block */
+.is-style-no-style {
+	.inner-group {
+		width: 100%;
+	}
+}
+
+.is-style-2-3-style {
+	display: flex;
+	justify-content: center;
+	margin-left: math.div(100%, 6);
+	margin-right: math.div(100%, 6);
+	@include for-size(tablet, down) {
+		margin-left: math.div(100%, 8);
+		margin-right: math.div(100%, 8);
+	}
+	@include for-size(mobile, down) {
+		margin: 0;
+	}
+	.inner-group {
+		width: 100%;
+	}
+}
+
+.is-style-1-2-style {
+	display: flex;
+	justify-content: center;
+	margin-left: math.div(100%, 4);
+	margin-right: math.div(100%, 4);
+	@include for-size(tablet, down) {
+		margin-left: math.div(100%, 6);
+		margin-right: math.div(100%, 6);
+	}
+	@include for-size(mobile, down) {
+		margin: 0;
+	}
+	.inner-group {
+		width: 100%;
+	}
+}
+
+//Cover block
+.wp-block-cover {
+	margin-bottom: 1.5em;
+}
+
+//Quote Style 1
+.is-style-quote-style-1 {
+	&::before {
+		display: none;
+	}
+
+	margin: 2vh 0;
+	padding: 0;
+	position: relative;
+	width: 60%;
+	border: 0;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-fon-smoothing: grayscale;
+	left: 12px;
+	background-color: transparent;
+
+	p {
+		font-style: normal;
+	}
+
+	& p:first-of-type:before {
+		content: "\201c";
+		position: absolute;
+		left: -0.5em;
+	}
+
+	& p:last-of-type:after {
+		content: "\201d";
+		position: absolute;
+	}
+
+	cite {
+		font-weight: 600;
+		position: relative;
+	}
+
+	cite:before {
+		content: "–";
+		position: absolute;
+		left: -0.6em;
+	}
+}
+
+//Quote Style 1
+.is-style-quote-style-2 {
+	&::before,
+	&::after {
+		height: 1px;
+		background: $color_black_0;
+		content: "";
+		display: block;
+		position: relative;
+		width: 20%;
+	}
+
+	&::before {
+		top: -15px;
+	}
+	&::after {
+		bottom: -15px;
+	}
+
+	margin: 2vh 0 4vh 0;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		font-style: normal;
+		text-align: center;
+		margin: 0 4vw;
+		font-family: "Francois One";
+		max-width: 75vw;
+	}
+
+	& p:first-of-type:before {
+		content: "\201c";
+		margin-right: 3px;
+	}
+
+	& p:last-of-type:after {
+		content: "\201d";
+		margin-left: 3px;
+	}
+
+	cite {
+		font-weight: 600;
+		position: relative;
+		text-align: center;
+		margin: 1rem 0 0 0;
+	}
+}
+
+.dark-theme .is-style-quote-style-2 {
+	&::before,
+	&::after {
+		background: $color_white_1;
+	}
+}
+
+/*Novin Media Text Basic  */
+.is-style-novin-media-text {
+	@include for-size(601px, up) {
+		//Medio on the left
+		figure.wp-block-media-text__media {
+			padding: 0 8% 0 0;
+		}
+		div.wp-block-media-text__content {
+			padding-right: 0;
+		}
+		//Media on the right
+		&.has-media-on-the-right {
+			figure.wp-block-media-text__media {
+				padding: 0 0 0 8%;
+			}
+			div.wp-block-media-text__content {
+				padding-left: 0;
+			}
+		}
+	}
+
+	@include for-size(600px, down) {
+		figure.wp-block-media-text__media {
+			margin: 5vw 0;
+		}
+		div.wp-block-media-text__content {
+			padding: 0;
+		}
+	}
+}
+
+/* Miért érdemes minket választania  */
+.is-style-novin-why-container {
+	justify-content: space-between;
+
+	/* Box style */
+	.wp-block-column {
+		flex: 0 1 280px !important;
+		height: 280px;
+		padding: 25px;
+		@include for-size(tablet, down) {
+			padding: 20px 10px;
+			height: 300px;
+		}
+		background-color: $color_white_0;
+		border-radius: 3px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		/* Title */
+		h3 {
+			@include h4-style;
+		}
+
+		//Description
+		p {
+			color: $color_gray_4;
+			font-size: 1rem;
+			@include for-size(mobile, down) {
+				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 781px) {
+	.is-style-novin-why-container.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+		flex-basis: 48% !important;
+		@include for-size(500px, down) {
+			flex-basis: 70% !important;
+		}
+		margin: 25px auto;
+		height: 270px;
+	}
 }

@@ -12,5 +12,137 @@
   color: #fff;
   padding: 2px;
 }
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./includes/block-editor/blocks/block-two/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-novinblocks-first-block {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+/* GYIK */
+.novin-gyik-container {
+  background-color: white;
+  border-top: 1px solid #8d8d8d;
+  border-bottom: 1px solid #8d8d8d;
+  width: 80%;
+  margin: 1vmax auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 50px;
+  transition: 0.25s linear;
+}
+@media only screen and (max-width: 760px) {
+  .novin-gyik-container {
+    width: 100%;
+    padding: 25px;
+  }
+}
+.novin-gyik-container .novin-gyik-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.novin-gyik-container .novin-gyik-top h3.novin-gyik-question {
+  font-weight: bold;
+  color: black;
+  flex: 1 0;
+  margin: 0 auto 0 0;
+}
+.novin-gyik-container .novin-gyik-top svg.arrow {
+  margin: 0 0 0 10px;
+  transition: 0.05s linear;
+}
+.novin-gyik-container .novin-gyik-bottom {
+  display: none;
+  margin-top: 15px;
+}
+.novin-gyik-container .novin-gyik-bottom p {
+  margin: 0 25px 0 0;
+  color: #242424;
+}
+@media only screen and (max-width: 760px) {
+  .novin-gyik-container .novin-gyik-bottom p {
+    margin: 0 0;
+  }
+}
+
+.novin-gyik-container.is-active {
+  background-color: white;
+  margin: 1vmax auto 2vmax auto;
+}
+.novin-gyik-container.is-active .novin-gyik-top svg.arrow {
+  transform: rotate(180deg);
+}
+.novin-gyik-container.is-active .novin-gyik-bottom {
+  display: block;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./includes/block-editor/blocks/block-three/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-expert {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 40% 60%;
+  grid-template-rows: 40% 60%;
+      grid-template-areas: "image header" "description skills";
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 500px;
+  padding: 50px;
+}
+.novin-expert .expert-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+.novin-expert .expert-image img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.novin-expert .expert-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.novin-expert .expert-description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
+}
+.novin-expert .expert-skills {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: skills;
+  margin: 0;
+}
 
 /*# sourceMappingURL=style-index.css.map*/

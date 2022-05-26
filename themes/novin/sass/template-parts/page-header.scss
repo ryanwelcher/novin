@@ -25,6 +25,9 @@ section.page-header {
 		h1.page-title {
 			text-transform: uppercase;
 			text-shadow: 0 1px 0 rgba(183, 183, 183, 0.68);
+			strong {
+				color: $color_orange_2;
+			}
 		}
 
 		/* Subtitle */
@@ -48,6 +51,12 @@ section.page-header {
 		/* CTA button*/
 		.page-cta-button {
 			@include black-button;
+		}
+
+		/* CTA button 2 */
+		.page-cta-button.second-button {
+			@include orange-button;
+			margin-left: 15px;
 		}
 	}
 
