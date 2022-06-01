@@ -46,7 +46,7 @@ function novinblocks_novin_blocks_block_init() {
     );
 
     foreach ($blocks as $block) {
-        register_block_type(plugin_dir_path(__FILE__) . 'includes/block-editor/blocks/' . $block);
+        register_block_type( plugin_dir_path( __FILE__ ) . 'build/' . $block );
     }
 }
 add_action('init', 'novinblocks_novin_blocks_block_init');
