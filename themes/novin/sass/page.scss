@@ -1,7 +1,10 @@
 @import "./variables.scss";
 
 #page.grid-container {
-	@include margin-width;
+	overflow-x: hidden;
+	.inside-article {
+		@include margin-width;
+	}
 	max-width: 100%;
 
 	.site-content {

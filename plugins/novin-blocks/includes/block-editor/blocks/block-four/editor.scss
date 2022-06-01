@@ -1,0 +1,45 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.novin-outsourcing-process-step {
+	//Step number
+	.outsourcing-step {
+		margin: 0 15px;
+		min-width: 50px !important;
+	}
+	//Inner
+	.outsourcing-inner {
+		//Image
+		.outsourcing-image {
+			button {
+				flex-direction: column;
+			}
+			@media only screen and (max-width: 1440px) {
+			}
+		}
+
+		//Infos
+		.outsourcing-infos {
+			//Title
+			.outsourcing-title {
+			}
+
+			//Description
+			.outsourcing-description {
+			}
+
+			//Footer
+			.outsourcing-footer {
+				svg {
+				}
+
+				//time
+				.outsourcing-time {
+				}
+			}
+		}
+	}
+}

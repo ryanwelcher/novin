@@ -5,8 +5,55 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-novinblocks-first-block {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.novin-service-block {
+	display: grid;
+	justify-items: center;
+	align-items: flex-start;
+	width: 200px;
+	@media only screen and (max-width: 760px) {
+		width: 145px;
+	}
+	//Circle and icon
+	.service-icon-bg {
+		width: 80px;
+		height: 80px;
+		@media only screen and (max-width: 760px) {
+			width: 60px;
+			height: 60px;
+		}
+		display: grid;
+		place-items: center;
+		border-radius: 50%;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+			rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+		margin-bottom: 1rem;
+
+		//Icon
+		.services-icon {
+			display: flex;
+			svg {
+				fill: white;
+				width: 25px;
+				height: 25px;
+				@media only screen and (max-width: 760px) {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+
+	//Title
+	.services-title {
+		font-family: "Bertioga Sans";
+		font-weight: bold;
+		text-align: center;
+		@media only screen and (max-width: 760px) {
+			font-size: 1rem;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	}
 }

@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "novinblocks/sixth-block",
+	"version": "0.1.0",
+	"title": "Ügyfél kérdés",
+	"category": "novin-blocks",
+	"icon": "edit-page",
+	"description": "Ügyfél kérdése ikonblokk",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"customerquestionIcon": {
+			"type": "string",
+			"source": "html",
+			"selector": ".customerquestion-icon"
+		},
+		"customerquestionTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": ".customerquestion-title"
+		},
+		"customerquestionIconBgColor": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": true,
+			"text": true,
+			"gradients": true
+		}
+	},
+	"textdomain": "novin-blocks",
+	"editorScript": "file:../../../../build/index.js",
+	"editorStyle": "file:../../../../build/index.css",
+	"style": "file:../../../../build/style-index.css"
+}

@@ -17,7 +17,7 @@ html {
 		font-size: 16px; /*i.e. = 1rem*/
 	}
 	@include for-size(ultrahd, up) {
-		font-size: 18px; /*i.e. = 1rem*/
+		font-size: 17px; /*i.e. = 1rem*/
 	}
 }
 
@@ -42,16 +42,16 @@ body {
 		font-size: 1.3rem;
 		line-height: 1.4;
 	}
-	/*ON ultrahd screen*/
-	@include for-size(ultrahd, up) {
-		font-size: 1.4rem;
-		line-height: 1.5;
-	}
-	/*ON 4k screen*/
-	@include for-size(4k, up) {
-		font-size: 1.4rem;
-		line-height: 1.6;
-	}
+	// /*ON ultrahd screen*/
+	// @include for-size(ultrahd, up) {
+	// 	font-size: 1.4rem;
+	// 	line-height: 1.5;
+	// }
+	// /*ON 4k screen*/
+	// @include for-size(4k, up) {
+	// 	font-size: 1.4rem;
+	// 	line-height: 1.6;
+	// }
 }
 
 @mixin h1-style {
@@ -70,16 +70,16 @@ body {
 		font-size: 3rem;
 		line-height: 1.2;
 	}
-	/*ON ultrahd screen*/
-	@include for-size(ultrahd, up) {
-		font-size: 3rem;
-		line-height: 1.15;
-	}
-	/*ON 4k screen*/
-	@include for-size(4k, up) {
-		font-size: 3rem;
-		line-height: 1.25;
-	}
+	// /*ON ultrahd screen*/
+	// @include for-size(ultrahd, up) {
+	// 	font-size: 3rem;
+	// 	line-height: 1.15;
+	// }
+	// /*ON 4k screen*/
+	// @include for-size(4k, up) {
+	// 	font-size: 3rem;
+	// 	line-height: 1.25;
+	// }
 }
 
 @mixin h2-style {
@@ -98,16 +98,16 @@ body {
 		font-size: 2.1rem;
 		line-height: 1.25;
 	}
-	/*ON ultrahd screen*/
-	@include for-size(ultrahd, up) {
-		font-size: 2.2rem;
-		line-height: 1.325;
-	}
-	/*ON 4k screen*/
-	@include for-size(4k, up) {
-		font-size: 2.2rem;
-		line-height: 1.25;
-	}
+	// /*ON ultrahd screen*/
+	// @include for-size(ultrahd, up) {
+	// 	font-size: 2.2rem;
+	// 	line-height: 1.325;
+	// }
+	// /*ON 4k screen*/
+	// @include for-size(4k, up) {
+	// 	font-size: 2.2rem;
+	// 	line-height: 1.25;
+	// }
 }
 
 @mixin h3-style {
@@ -126,16 +126,16 @@ body {
 		font-size: 1.45rem;
 		line-height: 1.25;
 	}
-	/*ON ultrahd screen*/
-	@include for-size(ultrahd, up) {
-		font-size: 1.5rem;
-		line-height: 1.25;
-	}
-	/*ON 4k screen*/
-	@include for-size(4k, up) {
-		font-size: 1.6rem;
-		line-height: 1.25;
-	}
+	// /*ON ultrahd screen*/
+	// @include for-size(ultrahd, up) {
+	// 	font-size: 1.5rem;
+	// 	line-height: 1.25;
+	// }
+	// /*ON 4k screen*/
+	// @include for-size(4k, up) {
+	// 	font-size: 1.6rem;
+	// 	line-height: 1.25;
+	// }
 }
 
 @mixin h4-style {
@@ -154,16 +154,16 @@ body {
 		font-size: 1.25rem;
 		line-height: 1.15;
 	}
-	/*ON ultrahd screen*/
-	@include for-size(ultrahd, up) {
-		font-size: 1.35rem;
-		line-height: 1.15;
-	}
-	/*ON 4k screen*/
-	@include for-size(4k, up) {
-		font-size: 1.55rem;
-		line-height: 1.25;
-	}
+	// 	/*ON ultrahd screen*/
+	// 	@include for-size(ultrahd, up) {
+	// 		font-size: 1.35rem;
+	// 		line-height: 1.15;
+	// 	}
+	// 	/*ON 4k screen*/
+	// 	@include for-size(4k, up) {
+	// 		font-size: 1.55rem;
+	// 		line-height: 1.25;
+	// 	}
 }
 
 @mixin blockquote-style {
@@ -182,16 +182,16 @@ body {
 		font-size: 1.4rem;
 		line-height: 1.5;
 	}
-	/*ON ultrahd screen*/
-	@include for-size(ultrahd, up) {
-		font-size: 1.5rem;
-		line-height: 1.6;
-	}
-	/*ON 4k screen*/
-	@include for-size(4k, up) {
-		font-size: 1.7rem;
-		line-height: 1.7;
-	}
+	// /*ON ultrahd screen*/
+	// @include for-size(ultrahd, up) {
+	// 	font-size: 1.5rem;
+	// 	line-height: 1.6;
+	// }
+	// /*ON 4k screen*/
+	// @include for-size(4k, up) {
+	// 	font-size: 1.7rem;
+	// 	line-height: 1.7;
+	// }
 }
 
 body {

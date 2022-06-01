@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "novinblocks/fourth-block",
+	"version": "0.1.0",
+	"title": "Outsourcing folyamat",
+	"category": "novin-blocks",
+	"icon": "migrate",
+	"description": "IT outsourcing folyamat lépései",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"outsourcingProcessTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": ".outsourcing-title"
+		},
+		"outsourcingProcessDescription": {
+			"type": "string",
+			"source": "html",
+			"selector": ".outsourcing-description"
+		},
+		"outsourcingProcessTime": {
+			"type": "string",
+			"source": "html",
+			"selector": ".outsourcing-time"
+		},
+		"outsourcingProcessStep": {
+			"type": "string",
+			"source": "html",
+			"selector": ".outsourcing-step"
+		},
+		"mediaID": {
+			"type": "number"
+		},
+		"mediaURL": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		}
+	},
+	"textdomain": "novin-blocks",
+	"editorScript": "file:../../../../build/index.js",
+	"editorStyle": "file:../../../../build/index.css",
+	"style": "file:../../../../build/style-index.css"
+}

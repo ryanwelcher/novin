@@ -39,12 +39,6 @@
 			"source": "attribute",
 			"selector": "img",
 			"attribute": "src"
-		},
-
-		"instructions": {
-			"type": "string",
-			"source": "html",
-			"selector": ".steps"
 		}
 	},
 	"textdomain": "novin-blocks",

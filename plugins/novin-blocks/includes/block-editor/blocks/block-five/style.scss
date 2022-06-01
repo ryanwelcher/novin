@@ -1,0 +1,73 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.novin-competitive-advantage {
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 2rem;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	margin-block-start: 0 !important;
+	width: 400px;
+	@media only screen and (max-width: 1367px) {
+		width: 350px;
+	}
+	transition: 0.15s linear;
+
+	//Image
+	.comp-image {
+		margin-bottom: 2rem;
+		img {
+			width: 190px;
+			height: 190px;
+			@media only screen and (max-width: 1367px) {
+				width: 160px;
+				height: 160px;
+			}
+			border-radius: 50%;
+			object-fit: cover;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+				rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+		}
+	}
+
+	//Title
+	.comp-title {
+		color: #004794;
+		font-weight: bold;
+		text-align: center;
+		transition: 0.15s linear;
+		@media only screen and (max-width: 1367px) {
+			font-size: 1.25rem;
+		}
+	}
+
+	//Description
+	.comp-desc {
+		color: #3d405b;
+		font-size: 1rem;
+		@media only screen and (max-width: 1367px) {
+			font-size: 0.9rem;
+		}
+		text-align: center;
+		font-weight: 600;
+		transition: 0.15s linear;
+	}
+	//Hover effect
+	&:hover {
+		background-color: #004794;
+		.comp-title {
+			color: #f4d06f;
+		}
+		.comp-desc {
+			color: white;
+		}
+	}
+}

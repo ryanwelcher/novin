@@ -4,6 +4,29 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-novinblocks-first-block {
-	border: 1px dotted #f00;
+.novin-service-block {
+	background-color: white;
+	margin: 25px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	padding: 25px;
+	.services-icon {
+		width: 90%;
+		padding: 25px;
+		margin: 25px;
+	}
+	.services-title {
+		width: 100%;
+		border: 1px solid rgb(68, 68, 68);
+		color: black !important;
+		padding: 15px;
+	}
+}
+
+.novin-colors-panel {
+	.components-panel__row {
+		justify-content: start;
+	}
 }

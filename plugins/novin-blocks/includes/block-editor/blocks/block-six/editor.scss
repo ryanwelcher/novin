@@ -1,0 +1,33 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.novin-customer-block {
+	background-color: white;
+	margin: 25px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	padding: 25px;
+	.customerquestion-icon {
+		width: 90%;
+		padding: 25px;
+		margin: 25px;
+	}
+	.customerquestion-title {
+		width: 95%;
+		margin: 0 auto;
+		border: 1px solid rgb(68, 68, 68);
+		color: black !important;
+		padding: 15px;
+	}
+}
+
+.novin-colors-panel {
+	.components-panel__row {
+		justify-content: start;
+	}
+}

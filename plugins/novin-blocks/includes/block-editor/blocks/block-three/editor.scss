@@ -4,6 +4,11 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-novinblocks-first-block {
-	border: 1px dotted #f00;
+.novin-experts {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(435px, 1fr));
+	max-width: 1100px;
+	.novin-expert {
+		margin: 15px !important;
+	}
 }

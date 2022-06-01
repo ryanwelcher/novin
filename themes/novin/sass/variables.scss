@@ -32,7 +32,7 @@ $color_blue_1: #3d405b; //Independence
 
 /*Media queries breakpoints*/
 $query__mobile: 760px;
-$query__tablet: 1025px;
+$query__tablet: 1081px;
 $query__desktop: 1367px;
 $query__ultrahd: 1921px;
 $query__4k: 2561px;
@@ -194,8 +194,8 @@ $mobile_margin_right: $mobile_padding_right;
 	}
 
 	@include for-size(tablet, down) {
-		padding-left: -$tablet_margin_left;
-		padding-right: -$tablet_margin_right;
+		margin-left: -$tablet_margin_left;
+		margin-right: -$tablet_margin_right;
 	}
 
 	@include for-size(mobile, down) {

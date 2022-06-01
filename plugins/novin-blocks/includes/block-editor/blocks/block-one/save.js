@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from "@wordpress/i18n";
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -11,7 +11,15 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	ColorPalette,
+	InspectorControls,
+	PlainText,
+	RichText,
+} from "@wordpress/block-editor";
+
+import { RawHTML } from "@wordpress/element";
 
 /**
  * The save function defines the way in which the different attributes should
@@ -22,10 +30,38 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save() {
+
+const save = (props) => {
+	// Lift info from props and populate various constants.
+	const {
+		attributes: { servicesIcon, servicesTitle, servicesIconBgColor },
+		setAttributes,
+	} = props;
+
+	const blockProps = useBlockProps.save({
+		className: "novin-service-block",
+	});
+
 	return (
-		<p {...useBlockProps.save()}>
-			{__('First block – hello from the saved content!', 'novin-blocks')}
-		</p>
+		<div {...blockProps}>
+			<div
+				className="service-icon-bg"
+				style={{ backgroundColor: servicesIconBgColor }}
+			>
+				<RawHTML
+					style={{ backgroundColor: servicesIconBgColor }}
+					className="services-icon"
+				>
+					{servicesIcon}
+				</RawHTML>
+			</div>
+
+			<RichText.Content
+				tagName="p"
+				className="services-title"
+				value={servicesTitle}
+			/>
+		</div>
 	);
-}
+};
+export default save;

@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.novin-competitive-advantage {
+	margin: 20px !important;
+	.comp-image {
+		button {
+			display: flex;
+			flex-direction: column;
+			justify-content: stretch;
+			align-items: stretch;
+			height: 200px;
+		}
+	}
+
+	//Hover effect
+	&:hover {
+		background-color: transparent;
+		.comp-title {
+			color: #004794;
+		}
+		.comp-desc {
+			color: #3d405b;
+		}
+	}
+}

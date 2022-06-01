@@ -3,7 +3,7 @@
 <a class="logo" href="<?php echo get_home_url(); ?>"
     style="display:flex;">
     <svg width="100%" height="100%" viewBox="0 0 182.24016 49.773212" version="1.1" id="svg411"
-        inkscape:version="1.1.2 (b8e25be833, 2022-02-05)" sodipodi:docname="logo_lilás_fekvő.svg"
+        inkscape:version="1.1.2 (b8e25be833, 2022-02-05)" sodipodi:docname="novin_logo_fekvo_színes_rgb_svg.svg"
         inkscape:export-filename="C:\Users\Lenovo\Desktop\Novin\Logó\logo_1_fekvő.png" inkscape:export-xdpi="96"
         inkscape:export-ydpi="96" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -52,11 +52,11 @@
                 d="M 6.3510922,172.38164 41.852002,205.88417 19.592062,202.09144 6.3510922,221.88152 Z"
                 sodipodi:nodetypes="ccccc" inkscape:export-filename="C:\Users\Lenovo\Desktop\novin_logo_new.png"
                 inkscape:export-xdpi="96" inkscape:export-ydpi="96" />
-            <path id="rect70-5-0" style="fill:#ff8811;fill-opacity:1;stroke-width:0.214597"
+            <path id="rect70-5-0" style="fill:#feab1f;fill-opacity:1;stroke-width:0.214597"
                 d="m 19.916072,204.92502 21.93593,3.65424 v 13.25115 z" sodipodi:nodetypes="cccc"
                 inkscape:export-filename="C:\Users\Lenovo\Desktop\novin_logo_new.png" inkscape:export-xdpi="96"
                 inkscape:export-ydpi="96" />
-            <path id="rect70-4-7-5" style="fill:#ff8811;fill-opacity:1;stroke-width:0.207899"
+            <path id="rect70-4-7-5" style="fill:#feab1f;fill-opacity:1;stroke-width:0.207899"
                 d="m 30.992982,191.94475 10.83682,-19.64671 0.0224,32.35376 0.003,-2.23961 z" sodipodi:nodetypes="ccccc"
                 inkscape:export-filename="C:\Users\Lenovo\Desktop\novin_logo_new.png" inkscape:export-xdpi="96"
                 inkscape:export-ydpi="96" />
@@ -70,14 +70,15 @@
                     x="48.689713" y="201.50908">NOVIN</tspan>
             </text>
             <text xml:space="preserve"
-                style="font-style:normal;font-weight:normal;font-size:18.9175px;line-height:1.25;font-family:sans-serif;fill:#ff8811;fill-opacity:1;stroke:none;stroke-width:2.41566"
+                style="font-style:normal;font-weight:normal;font-size:18.9175px;line-height:1.25;font-family:sans-serif;fill:#feab1f;fill-opacity:1;stroke:none;stroke-width:2.41566"
                 x="50.701603" y="221.75761" id="text3101-8-6"
                 inkscape:export-filename="C:\Users\Lenovo\Desktop\novin_logo_new.png" inkscape:export-xdpi="96"
                 inkscape:export-ydpi="96">
                 <tspan sodipodi:role="line" id="tspan3099-0-7"
-                    style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:18.9175px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff8811;fill-opacity:1;stroke-width:2.41566"
+                    style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:18.9175px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#feab1f;fill-opacity:1;stroke-width:2.41566"
                     x="50.701603" y="221.75761">INFORMATIKA</tspan>
             </text>
         </g>
     </svg>
+
 </a>

@@ -13,6 +13,18 @@ wp.domReady(() => {
 		isDefault: false,
 	});
 
+	wp.blocks.registerBlockStyle("core/paragraph", {
+		name: "width-50", //style name is-style-width-50
+		label: "50%(/75%) width",
+		isDefault: false,
+	});
+
+	wp.blocks.registerBlockStyle("core/paragraph", {
+		name: "width-40", //style name is-style-width-40
+		label: "40%(/66%) width",
+		isDefault: false,
+	});
+
 	wp.blocks.registerBlockStyle("core/image", {
 		name: "image-left", //style name is-style-zero
 		label: "Image Left",
@@ -28,19 +40,25 @@ wp.domReady(() => {
 	wp.blocks.registerBlockStyle("core/button", {
 		name: "black-and-white", //style name is-style-black-and-white
 		label: "Black and White",
-		isDefault: true,
+		isDefault: false,
 	});
 
 	wp.blocks.registerBlockStyle("core/button", {
 		name: "black-and-orange", //style name is-style-black-and-orange
 		label: "Black and Orange",
-		isDefault: true,
+		isDefault: false,
+	});
+
+	wp.blocks.registerBlockStyle("core/button", {
+		name: "orange-and-black", //style name is-style-orange-and-black
+		label: "Orange and Black",
+		isDefault: false,
 	});
 
 	wp.blocks.registerBlockStyle("core/button", {
 		name: "outline-black", //style name is-style-outline-black
 		label: "Outline Black",
-		isDefault: true,
+		isDefault: false,
 	});
 
 	wp.blocks.registerBlockStyle("core/group", {
@@ -60,42 +78,6 @@ wp.domReady(() => {
 		label: " 1/2 style",
 		isDefault: false,
 	});
-
-	// wp.blocks.registerBlockStyle( 'core/gallery', {
-	// 	name: 'gallery-style-1',  //style name is-style-gallery-style-1
-	// 	label:' Masonry Black & White',
-	// 	isDefault: false,
-	// } );
-	//
-	// wp.blocks.registerBlockStyle( 'core/gallery', {
-	// 	name: 'gallery-style-2',  //style name is-style-gallery-style-2
-	// 	label:' Masonry Normal',
-	// 	isDefault: true,
-	// } );
-	//
-	// wp.blocks.registerBlockStyle( 'core/gallery', {
-	// 	name: 'gallery-style-3',  //style name is-style-gallery-style-3
-	// 	label:' Masonry Outline',
-	// 	isDefault: false,
-	// } );
-	//
-	// wp.blocks.registerBlockStyle( 'core/gallery', {
-	// 	name: 'gallery-style-4',  //style name is-style-gallery-style-4
-	// 	label:' Swiper Effect Cards',
-	// 	isDefault: false,
-	// } );
-	//
-	// wp.blocks.registerBlockStyle( 'core/gallery', {
-	// 	name: 'gallery-style-5',  //style name is-style-gallery-style-5
-	// 	label:' Swiper Effect Coverflow',
-	// 	isDefault: false,
-	// } );
-	//
-	// wp.blocks.registerBlockStyle( 'core/gallery', {
-	// 	name: 'gallery-style-6',  //style name is-style-gallery-style-6
-	// 	label:' Swiper Effect Creative',
-	// 	isDefault: false,
-	// } );
 
 	wp.blocks.registerBlockStyle("core/quote", {
 		name: "quote-style-1", //style name is-style-quote-style-1

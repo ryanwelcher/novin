@@ -105,6 +105,7 @@
 
 /* Footer contact */
 .novin-footer-contact {
+	@include padding-width;
 	display: flex;
 	flex-direction: column;
 	width: 50%;

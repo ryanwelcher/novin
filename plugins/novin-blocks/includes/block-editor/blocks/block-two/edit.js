@@ -49,7 +49,7 @@ const Edit = (props) => {
 		<div {...blockProps}>
 			<div className="novin-gyik-container">
 				<div className="novin-gyik-top">
-					<p>{__("Question:", "novin-blocks")}</p>
+					<p>{__("Kérdés:", "novin-blocks")}</p>
 					<RichText
 						className="novin-gyik-question"
 						tagName="h3"
@@ -58,7 +58,7 @@ const Edit = (props) => {
 					/>
 				</div>
 				<div className="novin-gyik-bottom">
-					<p>{__("Answer:", "novin-blocks")}</p>
+					<p>{__("Válasz:", "novin-blocks")}</p>
 					<RichText
 						tagName="p"
 						className="novin-gyik-answer"

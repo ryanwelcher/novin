@@ -1,6 +1,55 @@
 @import "../variables.scss";
 
+/* Szakértőink */
+.novin-experts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 4rem;
+	//novin-expert class is defined on the block level not here
+}
+
+/* Outsourcing folyamata */
+.novin-outsourcing-process-steps {
+	margin: 0 5vw;
+	@include for-size(desktop, down) {
+		margin: 0;
+	}
+	//.novin-outsourcing-process-step class is defined on the block level not here
+	.novin-outsourcing-process-step {
+		margin-block-start: 0 !important;
+	}
+}
+
+/* Árazásunkról */
 .arazasunkrol {
 	border-radius: 5px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Kiemelt partnerek logók */
+.kiemelt-partnereink-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 1rem;
+	@include for-size(mobile, down) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	figure {
+		margin-block-start: 0 !important;
+		img {
+			width: 100%;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+			height: 175px;
+			@include for-size(tablet, down) {
+				height: 120px;
+			}
+			@include for-size(mobile, down) {
+				object-fit: contain;
+				box-shadow: none;
+			}
+		}
+	}
 }

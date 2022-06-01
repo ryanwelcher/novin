@@ -7,10 +7,61 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-novinblocks-first-block {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.novin-service-block {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  width: 200px;
+}
+@media only screen and (max-width: 760px) {
+  .novin-service-block {
+    width: 145px;
+  }
+}
+.novin-service-block .service-icon-bg {
+  width: 80px;
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 760px) {
+  .novin-service-block .service-icon-bg {
+    width: 60px;
+    height: 60px;
+  }
+}
+.novin-service-block .service-icon-bg .services-icon {
+  display: flex;
+}
+.novin-service-block .service-icon-bg .services-icon svg {
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 760px) {
+  .novin-service-block .service-icon-bg .services-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.novin-service-block .services-title {
+  font-family: "Bertioga Sans";
+  font-weight: bold;
+  text-align: center;
+}
+@media only screen and (max-width: 760px) {
+  .novin-service-block .services-title {
+    font-size: 1rem;
+  }
+}
+.novin-service-block .services-title a {
+  text-decoration: none;
+  color: white;
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./includes/block-editor/blocks/block-two/style.scss ***!
@@ -21,12 +72,6 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-novinblocks-first-block {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-}
-
 /* GYIK */
 .novin-gyik-container {
   background-color: white;
@@ -97,15 +142,20 @@
 .novin-expert {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 40% 60%;
+  -ms-grid-rows: 40% 10px 60%;
   grid-template-rows: 40% 60%;
       grid-template-areas: "image header" "description skills";
+  gap: 10px;
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  width: 500px;
-  padding: 50px;
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 3px;
+  -webkit-margin-before: 0 !important;
+          margin-block-start: 0 !important;
 }
 .novin-expert .expert-image {
   -ms-grid-row: 1;
@@ -119,30 +169,463 @@
 .novin-expert .expert-image img {
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 150px;
-  height: 150px;
+  width: 135px;
+  height: 135px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .novin-expert .expert-header {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   grid-area: header;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+}
+.novin-expert .expert-header .expert-title {
+  text-align: end;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.novin-expert .expert-header .expert-price {
+  text-align: end;
+  color: #d0ad00;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .novin-expert .expert-description {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: description;
+  color: #444444;
+  font-size: 0.9rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: black white;
+}
+.novin-expert .expert-description::-webkit-scrollbar {
+  width: 6px;
+}
+@media only screen and (max-width: 500px) {
+  .novin-expert .expert-description::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+.novin-expert .expert-description::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.novin-expert .expert-description::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: black;
 }
 .novin-expert .expert-skills {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: skills;
   margin: 0;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-size: 1.1rem;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./includes/block-editor/blocks/block-four/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-outsourcing-process-step {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.novin-outsourcing-process-step .outsourcing-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  position: relative;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  height: auto;
+  width: 2px;
+}
+.novin-outsourcing-process-step .outsourcing-line .top,
+.novin-outsourcing-process-step .outsourcing-line .bottom {
+  border-right: 2px solid black;
+  flex: 1 1 auto;
+}
+.novin-outsourcing-process-step .outsourcing-line .circle {
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+.novin-outsourcing-process-step .outsourcing-step {
+  margin: 0 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+@media only screen and (max-width: 760px) {
+  .novin-outsourcing-process-step .outsourcing-step {
+    font-size: 2rem;
+    margin: 0 0 0 2rem;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner {
+    flex-direction: column;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+  min-width: 400px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: flex;
+  height: 300px;
+}
+@media only screen and (max-width: 1440px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+    min-width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+    align-self: flex-start;
+    padding: 0 0 0 3rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+    padding: 0 0 0 2rem;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-image img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  padding: 3rem 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos {
+    padding: 2rem 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos {
+    padding: 2rem 1rem 2rem 0;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 760px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-title {
+    font-size: 1.65rem;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-description {
+  color: #727272;
+  font-size: 1.1rem;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 100%;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-footer svg {
+  margin-right: 15px;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-footer .outsourcing-time {
+  font-weight: 600;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./includes/block-editor/blocks/block-five/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-competitive-advantage {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-margin-before: 0 !important;
+          margin-block-start: 0 !important;
+  width: 400px;
+  transition: 0.15s linear;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage {
+    width: 350px;
+  }
+}
+.novin-competitive-advantage .comp-image {
+  margin-bottom: 2rem;
+}
+.novin-competitive-advantage .comp-image img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage .comp-image img {
+    width: 160px;
+    height: 160px;
+  }
+}
+.novin-competitive-advantage .comp-title {
+  color: #004794;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.15s linear;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage .comp-title {
+    font-size: 1.25rem;
+  }
+}
+.novin-competitive-advantage .comp-desc {
+  color: #3d405b;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.15s linear;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage .comp-desc {
+    font-size: 0.9rem;
+  }
+}
+.novin-competitive-advantage:hover {
+  background-color: #004794;
+}
+.novin-competitive-advantage:hover .comp-title {
+  color: #f4d06f;
+}
+.novin-competitive-advantage:hover .comp-desc {
+  color: white;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./includes/block-editor/blocks/block-six/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-customer-block {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  width: 250px;
+  -webkit-margin-before: 0 !important;
+          margin-block-start: 0 !important;
+}
+@media only screen and (max-width: 760px) {
+  .novin-customer-block {
+    width: 180px;
+  }
+}
+.novin-customer-block .customer-icon-bg {
+  width: 80px;
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 760px) {
+  .novin-customer-block .customer-icon-bg {
+    width: 60px;
+    height: 60px;
+  }
+}
+.novin-customer-block .customer-icon-bg .customerquestion-icon {
+  display: flex;
+}
+.novin-customer-block .customer-icon-bg .customerquestion-icon svg {
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 760px) {
+  .novin-customer-block .customer-icon-bg .customerquestion-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.novin-customer-block .customerquestion-title {
+  font-family: "Open Sans";
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 760px) {
+  .novin-customer-block .customerquestion-title {
+    font-size: 1rem;
+  }
+}
+.novin-customer-block .customerquestion-title a {
+  text-decoration: none;
+  color: white;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./includes/block-editor/blocks/block-seven/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-miben-block {
+  border-radius: 3px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3rem 1fr 40% 3rem;
+  grid-template-columns: 3rem 1fr 40% 3rem;
+  -ms-grid-rows: 3rem auto auto 3rem;
+  grid-template-rows: 3rem auto auto 3rem;
+      grid-template-areas: " . . . ." ". title image ." ". desc image . " ". . . .";
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+}
+@media only screen and (max-width: 1081px) {
+  .novin-miben-block {
+    -ms-grid-columns: 2rem 1fr 2rem;
+    grid-template-columns: 2rem 1fr 2rem;
+    -ms-grid-rows: 2rem auto auto auto 2rem;
+    grid-template-rows: 2rem auto auto auto 2rem;
+        grid-template-areas: " . .  ." ". image ." ". title ." ". desc  . " ". . . ";
+  }
+}
+.novin-miben-block .miben-image {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: image;
+  display: flex;
+  margin-left: 2rem;
+}
+@media only screen and (max-width: 1081px) {
+  .novin-miben-block .miben-image {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+}
+.novin-miben-block .miben-image img {
+  width: 100%;
+  max-height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.novin-miben-block .miben-title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: title;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 760px) {
+  .novin-miben-block .miben-title {
+    font-size: 1.8rem;
+  }
+}
+.novin-miben-block .miben-desc {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: desc;
+  margin: 2rem 5rem 0 0;
+}
+@media only screen and (max-width: 1081px) {
+  .novin-miben-block .miben-image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+  }
+  .novin-miben-block .miben-title {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .novin-miben-block .miben-desc {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+}
+@media only screen and (max-width: 1081px) {
+  .novin-miben-block .miben-desc {
+    margin: 2rem 0 0 0;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .novin-miben-block .miben-desc {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .novin-miben-block .miben-desc {
+    font-size: 1rem;
+  }
+}
+.novin-miben-block .miben-desc::-webkit-scrollbar {
+  width: 6px;
+}
+@media only screen and (max-width: 500px) {
+  .novin-miben-block .miben-desc::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+.novin-miben-block .miben-desc::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.novin-miben-block .miben-desc::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: black;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

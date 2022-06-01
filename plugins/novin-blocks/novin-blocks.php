@@ -18,7 +18,7 @@
  *
  * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/filters/block-filters/#managing-block-categories
  */
-add_filter('block_categories', 'novin_block_categories', 10, 2);
+add_filter('block_categories', 'novin_block_categories', 20, 2);
 
 function novin_block_categories($categories, $post) {
     return array_merge(
@@ -41,7 +41,7 @@ function novin_block_categories($categories, $post) {
  */
 function novinblocks_novin_blocks_block_init() {
     $blocks = array(
-        'block-one/', 'block-two/', 'block-three/',
+        'block-one/', 'block-two/', 'block-three/', 'block-four/', 'block-five/', 'block-six/', 'block-seven/',
 
     );
 

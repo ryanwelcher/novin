@@ -4,13 +4,13 @@
 /* Gutenberg style rewrites */
 
 /* Alignfull and alinwide means the same in the novin themes */
-.entry-content .alignfull {
+.no-sidebar .entry-content .alignfull {
 	max-width: 100vw;
-	width: 100%;
+	width: 100vw;
 	@include -margin-width;
 }
 
-.entry-content .alignwide {
+.no-sidebar .entry-content .alignwide {
 	max-width: inherit !important;
 	width: 100%;
 	margin: auto !important;
@@ -85,10 +85,26 @@
 	margin: 0;
 }
 
+.is-style-width-50 {
+	width: 50%;
+	@include for-size(mobile, down) {
+		width: 75%;
+	}
+	margin: 0 auto;
+}
+
+.is-style-width-40 {
+	width: 40%;
+	@include for-size(mobile, down) {
+		width: 66%;
+	}
+	margin: 0 auto;
+}
+
 /*Button Block */
 //Black and white
 .is-style-black-and-white {
-	@include for-size(tablet, down) {
+	@include for-size(ultrahd, down) {
 		transform: scale(0.92);
 	}
 	@include for-size(mobile, down) {
@@ -96,29 +112,17 @@
 	}
 	a {
 		border-radius: 5px;
-		font-family: "Francois One";
+		font-family: "Open Sans";
+		font-weight: 500;
 		border: 2px solid $color_black_0 !important;
 		color: $color_black_0 !important;
 		background-color: $color_white_0 !important;
-		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 		transition: 0.15s linear;
 	}
 	a:hover {
 		color: $color_white_0 !important;
 		background-color: $color_black_0 !important;
-	}
-}
-.dark-theme .is-style-black-and-white {
-	a {
-		border-radius: 5px;
-		border-width: 0 !important;
-		color: $color_white_0 !important;
-		background-color: $color_black_0 !important;
-		box-shadow: 0 1px 2px 0 rgba(208, 193, 193, 0.3), 0 1px 3px 1px rgba(162, 167, 170, 0.3) !important;
-	}
-	a:hover {
-		color: $color_black_0 !important;
-		background-color: $color_white_0 !important;
 	}
 }
 .is-style-black-and-white.scale80 {
@@ -131,7 +135,7 @@
 /*Button Block */
 //Black and Orange
 .is-style-black-and-orange {
-	@include for-size(tablet, down) {
+	@include for-size(ultrahd, down) {
 		transform: scale(0.92);
 	}
 	@include for-size(mobile, down) {
@@ -139,28 +143,17 @@
 	}
 	a {
 		border-radius: 5px;
-		font-family: "Francois One";
+		font-family: "Open Sans";
+		font-weight: 500;
 		border: 2px solid $color_black_0 !important;
 		color: $color_white_0 !important;
 		background-color: $color_black_0 !important;
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 		transition: 0.15s linear;
 	}
 	a:hover {
-		border: 2px solid $color_orange_1 !important;
+		border: 2px solid $color_orange_2 !important;
 		color: $color_white_0 !important;
-		background-color: $color_orange_1 !important;
-	}
-}
-.dark-theme .is-style-black-and-orange {
-	a {
-		border-width: 0 !important;
-		color: $color_black_0 !important;
-		background-color: $color_white_1 !important;
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
-	}
-	a:hover {
-		color: $color_white_1 !important;
 		background-color: $color_orange_2 !important;
 	}
 }
@@ -170,11 +163,9 @@
 .is-style-black-and-orange.scale90 {
 	transform: scale(0.9);
 }
-
-/*Button Block */
-//Outline Black
-.is-style-outline-black {
-	@include for-size(tablet, down) {
+//Orange and Black
+.is-style-orange-and-black {
+	@include for-size(ultrahd, down) {
 		transform: scale(0.92);
 	}
 	@include for-size(mobile, down) {
@@ -182,30 +173,49 @@
 	}
 	a {
 		border-radius: 5px;
-		font-family: "Francois One";
+		font-family: "Open Sans";
+		font-weight: 500;
+		border: 2px solid $color_orange_2 !important;
+		color: $color_white_0 !important;
+		background-color: $color_orange_2 !important;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+		transition: 0.15s linear;
+	}
+	a:hover {
+		border: 2px solid $color_black_0 !important;
+		color: $color_white_0 !important;
+		background-color: $color_black_0 !important;
+	}
+}
+.is-style-orange-and-black.scale80 {
+	transform: scale(0.8);
+}
+.is-style-orange-and-black.scale90 {
+	transform: scale(0.9);
+}
+
+/*Button Block */
+//Outline Black
+.is-style-outline-black {
+	@include for-size(ultrahd, down) {
+		transform: scale(0.92);
+	}
+	@include for-size(mobile, down) {
+		transform: scale(0.85);
+	}
+	a {
+		border-radius: 5px;
+		font-family: "Open Sans";
+		font-weight: 500;
 		border: 2px solid $color_black_0 !important;
 		color: $color_black_0 !important;
 		background-color: transparent !important;
-		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 		transition: 0.15s linear;
 	}
 	a:hover {
 		color: $color_white_1 !important;
 		background-color: $color_black_0 !important;
-	}
-}
-.dark-theme .is-style-outline-black {
-	a {
-		padding: 8px 18px !important;
-		border-radius: 5px;
-		border: 2px solid $color_white_1 !important;
-		color: $color_white_1 !important;
-		background-color: transparent !important;
-		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
-	}
-	a:hover {
-		color: $color_black_0 !important;
-		background-color: $color_white_1 !important;
 	}
 }
 .is-style-outline-black.scale80 {
@@ -369,6 +379,10 @@
 
 /*Novin Media Text Basic  */
 .is-style-novin-media-text {
+	img {
+		box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25), 0 1px 3px -1px rgba(0, 0, 0, 0.3);
+	}
+
 	@include for-size(601px, up) {
 		//Medio on the left
 		figure.wp-block-media-text__media {

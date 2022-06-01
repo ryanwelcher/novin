@@ -37,7 +37,6 @@ const Save = (props) => {
 			expertSkills,
 			expertPrice,
 			mediaURL,
-			mediaID,
 		},
 		setAttributes,
 	} = props;

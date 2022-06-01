@@ -86,14 +86,14 @@ const Edit = (props) => {
 					className="expert-title"
 					onChange={handleExpertTitleChange}
 					value={expertTitle}
-					placeholder={__("Expert title", "novin-blocks")}
+					placeholder={__("Szakértő megnevezése", "novin-blocks")}
 				/>
 				<RichText
 					tagName="p"
 					className="expert-price"
 					onChange={handleExpertPriceChange}
 					value={expertPrice}
-					placeholder={__("Expert price", "novin-blocks")}
+					placeholder={__("Szakértő ára(szövegesen)", "novin-blocks")}
 				/>
 			</div>
 			<RichText
@@ -101,7 +101,7 @@ const Edit = (props) => {
 				className="expert-description"
 				onChange={handleExpertDescriptionChange}
 				value={expertDescription}
-				placeholder={__("Expert description", "novin-blocks")}
+				placeholder={__("Szakértő részletes leírás", "novin-blocks")}
 			/>
 			<RichText
 				tagName="ul"
@@ -109,7 +109,7 @@ const Edit = (props) => {
 				className="expert-skills"
 				onChange={handleExpertSkillsChange}
 				value={expertSkills}
-				placeholder={__("Expert skills with ENTER new line", "novin-blocks")}
+				placeholder={__("Szakértő képességei ENTER-rel új sor", "novin-blocks")}
 			/>
 			<div className="expert-image">
 				<MediaUpload
