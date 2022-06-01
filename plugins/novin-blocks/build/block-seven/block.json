@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "novinblocks/seventh-block",
+	"version": "0.1.0",
+	"title": "Miben tudunk még segíteni?",
+	"category": "novin-blocks",
+	"icon": "cover-image",
+	"description": "Miben tudunk még segíteni?",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"mibenTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": "h3.miben-title"
+		},
+		"mibenDesc": {
+			"type": "string",
+			"source": "html",
+			"selector": "p.miben-desc"
+		},
+		"mediaID": {
+			"type": "number"
+		},
+		"mediaURL": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		},
+		"mibenBgColor": {
+			"type": "string"
+		},
+		"mibenTextColor": {
+			"type": "string"
+		},
+		"mibenTextColor2": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": true,
+			"text": true,
+			"gradients": true
+		}
+	},
+	"textdomain": "novin-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

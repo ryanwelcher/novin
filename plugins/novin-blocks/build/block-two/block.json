@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "novinblocks/second-block",
+	"version": "0.1.0",
+	"title": "GYIK",
+	"category": "novin-blocks",
+	"icon": "arrow-down",
+	"description": "GYIK - gyakran ismételt kérdések",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"question": {
+			"type": "string",
+			"source": "html",
+			"selector": ".novin-gyik-question"
+		},
+		"answer": {
+			"type": "string",
+			"source": "html",
+			"selector": ".novin-gyik-answer"
+		}
+	},
+	"textdomain": "novin-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

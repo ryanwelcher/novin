@@ -1,0 +1,29 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/block-five/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-competitive-advantage {
+  margin: 20px !important;
+}
+.novin-competitive-advantage .comp-image button {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  height: 200px;
+}
+.novin-competitive-advantage:hover {
+  background-color: transparent;
+}
+.novin-competitive-advantage:hover .comp-title {
+  color: #004794;
+}
+.novin-competitive-advantage:hover .comp-desc {
+  color: #3d405b;
+}
+
+/*# sourceMappingURL=index.css.map*/

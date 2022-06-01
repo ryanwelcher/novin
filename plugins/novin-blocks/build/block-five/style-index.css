@@ -1,0 +1,79 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/block-five/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-competitive-advantage {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-margin-before: 0 !important;
+          margin-block-start: 0 !important;
+  width: 400px;
+  transition: 0.15s linear;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage {
+    width: 350px;
+  }
+}
+.novin-competitive-advantage .comp-image {
+  margin-bottom: 2rem;
+}
+.novin-competitive-advantage .comp-image img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage .comp-image img {
+    width: 160px;
+    height: 160px;
+  }
+}
+.novin-competitive-advantage .comp-title {
+  color: #004794;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.15s linear;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage .comp-title {
+    font-size: 1.25rem;
+  }
+}
+.novin-competitive-advantage .comp-desc {
+  color: #3d405b;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.15s linear;
+}
+@media only screen and (max-width: 1367px) {
+  .novin-competitive-advantage .comp-desc {
+    font-size: 0.9rem;
+  }
+}
+.novin-competitive-advantage:hover {
+  background-color: #004794;
+}
+.novin-competitive-advantage:hover .comp-title {
+  color: #f4d06f;
+}
+.novin-competitive-advantage:hover .comp-desc {
+  color: white;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

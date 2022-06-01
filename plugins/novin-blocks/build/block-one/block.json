@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "novinblocks/first-block",
+	"version": "0.1.0",
+	"title": "Szolgáltatások",
+	"category": "novin-blocks",
+	"icon": "welcome-write-blog",
+	"description": "Szolgáltatások ikonblokk",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"servicesIcon": {
+			"type": "string",
+			"source": "html",
+			"selector": ".services-icon"
+		},
+		"servicesTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": ".services-title"
+		},
+		"servicesIconBgColor": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": true,
+			"text": true,
+			"gradients": true
+		}
+	},
+	"textdomain": "novin-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,35 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/block-six/editor.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-customer-block {
+  background-color: white;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 25px;
+}
+.novin-customer-block .customerquestion-icon {
+  width: 90%;
+  padding: 25px;
+  margin: 25px;
+}
+.novin-customer-block .customerquestion-title {
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid rgb(68, 68, 68);
+  color: black !important;
+  padding: 15px;
+}
+
+.novin-colors-panel .components-panel__row {
+  justify-content: start;
+}
+
+/*# sourceMappingURL=index.css.map*/

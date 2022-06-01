@@ -1,0 +1,136 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/block-four/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.novin-outsourcing-process-step {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.novin-outsourcing-process-step .outsourcing-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  position: relative;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  height: auto;
+  width: 2px;
+}
+.novin-outsourcing-process-step .outsourcing-line .top,
+.novin-outsourcing-process-step .outsourcing-line .bottom {
+  border-right: 2px solid black;
+  flex: 1 1 auto;
+}
+.novin-outsourcing-process-step .outsourcing-line .circle {
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+.novin-outsourcing-process-step .outsourcing-step {
+  margin: 0 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+@media only screen and (max-width: 760px) {
+  .novin-outsourcing-process-step .outsourcing-step {
+    font-size: 2rem;
+    margin: 0 0 0 2rem;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner {
+    flex-direction: column;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+  min-width: 400px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: flex;
+  height: 300px;
+}
+@media only screen and (max-width: 1440px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+    min-width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+    align-self: flex-start;
+    padding: 0 0 0 3rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-image {
+    padding: 0 0 0 2rem;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-image img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  padding: 3rem 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos {
+    padding: 2rem 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos {
+    padding: 2rem 1rem 2rem 0;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 760px) {
+  .novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-title {
+    font-size: 1.65rem;
+  }
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-description {
+  color: #727272;
+  font-size: 1.1rem;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 100%;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-footer svg {
+  margin-right: 15px;
+}
+.novin-outsourcing-process-step .outsourcing-inner .outsourcing-infos .outsourcing-footer .outsourcing-time {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
